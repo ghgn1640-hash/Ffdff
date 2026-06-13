@@ -1,0 +1,125 @@
+# Ffdff <!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NINJA QR LINK AI</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 420px;
+            background-color: #1a1a1a;
+            border: 2px solid #00ff33;
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: 0 0 20px rgba(0, 255, 51, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 22px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            color: #ffffff;
+        }
+
+        .subtitle {
+            font-size: 12px;
+            color: #888888;
+            margin-bottom: 25px;
+        }
+
+        .qr-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0px; 
+        }
+
+        /* KHUNG CHỨA MÃ QR */
+        .qr-card {
+            background-color: #222222;
+            padding: 20px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            /* TẠO ĐƯỜNG RANH GIỚI PHÂN CHIA RÕ RÀNG BẰNG ĐƯỜNG VIỀN SÁNG */
+            border: 1px solid #333333;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Đường ranh giới riêng biệt cho AI số 1 (Màu xanh neon) */
+        .ai-1 {
+            border-bottom: 4px solid #00ff33;
+        }
+
+        /* Đường ranh giới riêng biệt cho AI số 2 (Màu xanh dương hoặc xanh cyan tùy bạn chọn) */
+        .ai-2 {
+            border-bottom: 4px solid #00e5ff;
+            margin-bottom: 0; /* Mã cuối cùng không cần khoảng cách dưới */
+        }
+
+        .qr-image {
+            width: 160px;
+            height: 160px;
+            background-color: #ffffff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+
+        .qr-title {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #ffffff;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .qr-link-text {
+            margin-top: 5px;
+            font-size: 11px;
+            color: #888888;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>NINJA MATH-BOSS AI</h1>
+    <div class="subtitle">Quét mã QR để truy cập trực tiếp vào hệ thống siêu giải toán</div>
+
+    <div class="qr-list">
+        <div class="qr-card ai-1">
+            <img class="qr-image" src="https://api.qrserver.com/v1/create-qr-code/?data=LINK_WEB_AI_1_CỦA_BẠN" alt="QR AI 1">
+            <div class="qr-title" style="color: #00ff33;">MATH-BOSS AI v1.0</div>
+            <div class="qr-link-text">Hệ thống giải toán Matrix & Equation</div>
+        </div>
+
+        <div class="qr-card ai-2">
+            <img class="qr-image" src="https://api.qrserver.com/v1/create-qr-code/?data=LINK_WEB_AI_2_CỦA_BẠN" alt="QR AI 2">
+            <div class="qr-title" style="color: #00e5ff;">MATH-BOSS AI v2.0</div>
+            <div class="qr-link-text">Hệ thống tối ưu nâng cao</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
